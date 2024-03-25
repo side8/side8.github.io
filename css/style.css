@@ -68,11 +68,14 @@ body {
 
 .hero-text {
   font-size: calc(2rem + 1.5vw);
+  font-family: "Archivo", sans-serif;
+    font-weight: 800;
 }
 
 .btn-primary {
   background-color: #f6511d;
   border-color: #f6511d;
+  --bs-btn-hover-bg: var(--tertiary-color);
 }
 
 .btn-secondary {
