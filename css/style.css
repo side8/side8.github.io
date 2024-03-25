@@ -1,12 +1,27 @@
+:root {
+    --primary-color: #f6511d;
+    --secondary-color: #6c757d;
+    --tertiary-color: #D5DFE5;
+    --accent-color: #ffc107;
+  }
+  
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+}
 
+.primary-color {
+  color: var(--primary-color);
+}
+
+.tertiary-color{
+  color: var(--tertiary-color);
 }
 
 .bg-dark {
-background-color: #2C363F !important;
+  background-color: #2c363f !important;
 }
 
 .nav-link {
@@ -16,22 +31,23 @@ background-color: #2C363F !important;
 .navbar-brand {
   color: white;
   margin-left: 20px;
+
+  --bs-navbar-brand-hover-color: var(--primary-color);
 }
 
 .nav {
-    --bs-nav-link-color: #A6A867 ;
-    --bs-nav-link-hover-color: #A6A867;
+  --bs-nav-link-color: #a6a867;
+  --bs-nav-link-hover-color: #a6a867;
 }
 
 .jumbotron-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/_4254d9ff-ee82-4fa7-af9a-dc394260937a.jpeg"); /* Specify the path to your image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../images/_4254d9ff-ee82-4fa7-af9a-dc394260937a.jpeg"); /* Specify the path to your image */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   padding: 50px; /* Add padding to the container if needed */
-
 }
-
 
 .hero {
   display: flex;
@@ -42,22 +58,30 @@ background-color: #2C363F !important;
   color: white;
 }
 
-.btn-primary {
-  background-color: #F6511D;
-  border-color: #F6511D;
+.hero-text {
+  font-size: calc(2rem + 1.5vw);
 }
+
+.btn-primary {
+  background-color: #f6511d;
+  border-color: #f6511d;
+}
+
+
 
 .image-container {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-}
-
-.image-container img {
-  width: 100%; /* Ensures the image fills the container horizontally */
-  height: auto; /* Allows the image to maintain its aspect ratio */
-  margin: auto;
-}
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    overflow: hidden;
+    position: relative; /* Needed for absolutely positioned content */
+  }
+  
+  .image-container img {
+    width: 100%; /* Ensures the image fills the container horizontally */
+    height: 100%; /* Ensures the image fills the container vertically */
+    object-fit: cover; /* Scales the image while preserving its aspect ratio */
+    object-position: center; /* Centers the image within the container */
+  }
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -160,5 +184,29 @@ background-color: #2C363F !important;
 }
 
 .grayscale {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #F6511D;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
