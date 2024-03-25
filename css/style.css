@@ -5,6 +5,10 @@ body {
 
 }
 
+.bg-dark {
+background-color: #2C363F !important;
+}
+
 .nav-link {
   color: white;
 }
@@ -12,6 +16,11 @@ body {
 .navbar-brand {
   color: white;
   margin-left: 20px;
+}
+
+.nav {
+    --bs-nav-link-color: #A6A867 ;
+    --bs-nav-link-hover-color: #A6A867;
 }
 
 .jumbotron-container {
@@ -34,8 +43,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #fb616d;
-  border-color: #fb616d;
+  background-color: #F6511D;
+  border-color: #F6511D;
 }
 
 .image-container {
@@ -148,4 +157,8 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+}
+
+.grayscale {
+    filter: grayscale(100%);
 }

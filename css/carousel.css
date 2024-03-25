@@ -53,6 +53,10 @@ body {
   .featurette-heading {
     letter-spacing: -0.05rem;
   }
+
+  .first-heading {
+   margin-left: 1rem;
+  }
   
   /* rtl:end:remove */
   
