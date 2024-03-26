@@ -27,89 +27,97 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/87ad5d7072.js" crossorigin="anonymous"></script>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/87ad5d7072.js"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-  
-        .b-example-divider {
-          width: 100%;
-          height: 3rem;
-          background-color: rgba(0, 0, 0, .1);
-          border: solid rgba(0, 0, 0, .15);
-          border-width: 1px 0;
-          box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-  
-        .b-example-vr {
-          flex-shrink: 0;
-          width: 1.5rem;
-          height: 100vh;
-        }
-  
-        .bi {
-          vertical-align: -.125em;
-          fill: currentColor;
-        }
-  
-        .nav-scroller {
-          position: relative;
-          z-index: 2;
-          height: 2.75rem;
-          overflow-y: hidden;
-        }
-  
-        .nav-scroller .nav {
-          display: flex;
-          flex-wrap: nowrap;
-          padding-bottom: 1rem;
-          margin-top: -1px;
-          overflow-x: auto;
-          text-align: center;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch;
-        }
-  
-        .btn-bd-primary {
-          --bd-violet-bg: #712cf9;
-          --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-  
-          --bs-btn-font-weight: 600;
-          --bs-btn-color: var(--bs-white);
-          --bs-btn-bg: var(--bd-violet-bg);
-          --bs-btn-border-color: var(--bd-violet-bg);
-          --bs-btn-hover-color: var(--bs-white);
-          --bs-btn-hover-bg: #6528e0;
-          --bs-btn-hover-border-color: #6528e0;
-          --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-          --bs-btn-active-color: var(--bs-btn-hover-color);
-          --bs-btn-active-bg: #5a23c8;
-          --bs-btn-active-border-color: #5a23c8;
-        }
-  
-        .bd-mode-toggle {
-          z-index: 1500;
-        }
-  
-        .bd-mode-toggle .dropdown-menu .active .bi {
-          display: block !important;
-        }
-      </style>
-      <link rel="stylesheet" href="css/style.css" />
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/carousel.css" />
 
     <title>side8</title>
@@ -118,11 +126,11 @@
   <body>
     <nav class="navbar fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">side8</a>
+        <a class="navbar-brand" href="index.html">side8</a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
-        </li>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"
               >Who we are</a
@@ -141,82 +149,183 @@
       </div>
     </nav>
 
-
     <div class="row">
-        <div class="col-md-6">
-          <h2 class="featurette-heading fw-normal lh-1 first-heading">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-          <p class="lead first-heading">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="images/scott-graham-5fNmWej4tAA-unsplash.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid w-100 grayscale"  role="img" alt="image of a meeting" >
-          <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
-        </div>
+      <div class="col-md-6 px-5">
+        <h2
+          class="featurette-heading fw-normal lh-1 first-heading primary-color"
+        >
+          Elevate your vision<br />
+          with us.
+          <!-- <span class="text-body-secondary">It’ll blow your mind.</span> -->
+        </h2>
+        <p class="lead first-heading">
+          We stand as your strategic partner, offering consulting, engineering,
+          and innovation capabilities for businesses seeking long-term technical
+          excellence.
+        </p>
       </div>
+      <div class="col-md-6">
+        <img
+          src="images/scott-graham-5fNmWej4tAA-unsplash.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid w-100 grayscale"
+          role="img"
+          alt="image of a meeting"
+        />
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+      </div>
+    </div>
 
-      <div class="container marketing">
-        <hr class="featurette-divider">
+    <div class="container marketing" style="padding-top: 5rem">
 
-    <div class="row my-4">
+      <div class="row">
         <div class="col-lg-4">
           <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-          <img src="images/1627916616552.jpeg" width="140" height="140" class="rounded-circle grayscale" alt="image of a person">
-          <h2 class="fw-normal my-2">JP Hamilton-Savory</h2>
-          <p>Some bio text about JP</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+          <img
+            src="images/1627916616552.jpeg"
+            width="140"
+            height="140"
+            class="rounded-circle grayscale"
+            alt="image of a person"
+          />
+          <h2 class="fw-normal my-2 hover-underline-animation">
+            JP Hamilton-Savory
+          </h2>
+          <p>A proven product leader connecting strategy to execution.</p>
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com/in/jp-hamilton-savory/"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img src="images/1562534085448.jpeg" width="140" height="140" class="rounded-circle grayscale" alt="image of a person">
-            <h2 class="fw-normal my-2">Duncan Crawford</h2>
-          <p>Some bio text about Duncan</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+          <img
+            src="images/1562534085448.jpeg"
+            width="140"
+            height="140"
+            class="rounded-circle grayscale"
+            alt="image of a person"
+          />
+          <h2 class="fw-normal my-2 hover-underline-animation">
+            Duncan Crawford
+          </h2>
+          <p>A people focused technologist. etc... etc... can we make sure the bios are the same character length please?!</p>
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com/in/duncancrawford/"
+              >View details &raquo;</a
+            >
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img src="images/1595576280052.jpeg" width="140" height="140" class="rounded-circle grayscale" alt="image of a person">
-            <h2 class="fw-normal my-2">Tom van Neerijnen</h2>
-          <p>Som bio text about Tom</p>
-          <p><a class="btn btn-secondary" href="#"><i class="fa-brands fa-linkedin"></i>View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-  
-  
+          <img
+            src="images/1595576280052.jpeg"
+            width="140"
+            height="140"
+            class="rounded-circle grayscale"
+            alt="image of a person"
+          />
+          <h2 class="fw-normal my-2 hover-underline-animation">
+            Tom van Neerijnen
+          </h2>
+          <p>Some bio text about Tom</p>
+
+          <!-- <i class="fa-brands fa-linkedin"></i> -->
+
+          <p>
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com/in/tommyvn/"
+            >
+              View details &raquo;</a
+            >
+          </p>
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
       <!-- START THE FEATURETTES -->
-  
-      <hr class="featurette-divider">
-  
-   
-  
-      <hr class="featurette-divider">
-  
+
+      <hr class="featurette-divider" />
+
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+          <h2 class="featurette-heading fw-normal lh-1">
+            We've provided innovative solutions and expert guidance for
+            governmental agencies and startups
+            <span class="text-body-secondary">See for yourself.</span>
+          </h2>
+          <p class="lead">
+            Another featurette? Of course. More placeholder content here to give
+            you an idea of how this layout would work with some actual
+            real-world content in place.
+          </p>
         </div>
         <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+              500x500
+            </text>
+          </svg>
         </div>
-      </div>
-  
-      <hr class="featurette-divider">
-  
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-        </div>
-      </div>
-  
-      <hr class="featurette-divider">
       </div>
 
+      <hr class="featurette-divider" />
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            And lastly, this one.
+            <span class="text-body-secondary">Checkmate.</span>
+          </h2>
+          <p class="lead">
+            And yes, this is the last block of representative placeholder
+            content. Again, not really intended to be actually read, simply here
+            to give you a better view of what this would look like with some
+            actual content. Your content.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <svg
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
+              500x500
+            </text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
 
       <footer>
         <p>&copy; 2024</p>
       </footer>
-    
     </div>
 
     <!-- block out old code for now -->
@@ -299,7 +408,5 @@
       </div>
     </div> -->
     <!-- Optional JavaScript -->
-
   </body>
-
 </html>
