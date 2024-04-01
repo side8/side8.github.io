@@ -41,7 +41,7 @@ body {
 
 .jumbotron-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url("../images/_4254d9ff-ee82-4fa7-af9a-dc394260937a.jpeg"); /* Specify the path to your image */
+    url("../images/serverSide8.jpeg"); /* Specify the path to your image */
   background-size: cover; /* Cover the entire container */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
