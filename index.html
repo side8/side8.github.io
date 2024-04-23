@@ -51,7 +51,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">What we do</a>
+              <a class="nav-link active" href="what_we_do.html">What we do</a>
             </li>
 
             <!-- <li class="nav-item">
@@ -65,16 +65,17 @@
     </header>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron hero jumbotron-container">
-      <div class="container hero-container">
-        <h1 class="hero-text">
-          side8<br />
-          WHERE<br />
-          INNOVATION<br />
-          MEETS<br />
-          IMPLEMENTATION
-        </h1>
-        <!-- <p class="hero-text">
+    <section>
+      <div class="jumbotron hero jumbotron-container">
+        <div class="container hero-container">
+          <h1 class="hero-text">SIDE8</h1>
+          <p class="hero-text-anim hero-text">
+            <span>WHERE</span><br />
+            <span>INNOVATION</span><br />
+            <span>MEETS</span><br />
+            <span>IMPLEMENTATION</span>
+          </p>
+          <!-- <p class="hero-text">
           We build production ready, scalable and resilient proof of concepts
           using AWS serverless technologies in 6 weeks.
         </p>
@@ -83,83 +84,70 @@
           businesses looking for technical expertise under longer term
           engagements.
         </p> -->
-        <p>
-        
-
-          <a class="btn btn-primary btn-lg" href="mailto:hello@side8.io" target="_blank" class="text-muted ml-2 mr-2">Get in touch &raquo;</a>
-
-        </p>
+          <p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="mailto:hello@side8.io"
+              target="_blank"
+              class="text-muted ml-2 mr-2"
+              >Get in touch &raquo;</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="px-5 text-center">
-      <div class="container ">
-        <img src="images/side8-white.svg" alt="Side8 Logo" />
-        <!-- <h1 class="text-body-emphasis">Brand Section</h1> -->
-        <p class="col-lg-8 mx-auto lead">
-          This section could have values and vision. How we approach our work
-          through collaboration and value added
-        </p>
+    <section>
+      <div class="px-5 text-center">
+        <div class="logo container">
+          <img src="images/side8-white.svg" alt="Side8 Logo" />
+          <!-- <h1 class="text-body-emphasis">Brand Section</h1> -->
+          <p class="col-lg-8 mx-auto lead reveal-type">
+            Collaborate to propel your organisation toward its full potential.
+          </p>
+        </div>
       </div>
-    </div>
-
-
-   
-
+    </section>
 
     <div class="container my-5">
-      <!-- Example row of columns -->
       <div class="row my-5">
         <div class="col-md-4">
-          <div class="image-container">
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
             <img src="images/pexels-flo-dahm-699459.jpg" alt="Image 2" />
           </div>
-          <h2 class="my-4">Heading</h2>
-          <p>
+          <h2 class="my-4">Amplifying outcomes</h2>
+          <p class="reveal-type">
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
             fermentum massa justo sit amet risus. Etiam porta sem malesuada
             magna mollis euismod. Donec sed odio dui.
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
         </div>
         <div class="col-md-4">
-          <div class="image-container">
+          <div class="image-container  d-flex justify-content-center align-items-center anim-box">
             <img src="images/pexels-fauxels-3183197.jpg" alt="Image 2" />
           </div>
-          <h2 class="my-4">Heading</h2>
+          <h2 class="my-4">From Vision to Execution : Crafting Scalable Solutions</h2>
           <p>
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
             fermentum massa justo sit amet risus. Etiam porta sem malesuada
             magna mollis euismod. Donec sed odio dui.
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
         </div>
         <div class="col-md-4">
-          <div class="image-container">
+          <div class="image-container d-flex justify-content-center align-items-center anim-box">
             <img src="images/pexels-luis-gomes-546819.jpg" alt="Image 2" />
           </div>
-          <h2 class="my-4">Heading</h2>
+          <h2 class="my-4">Unleash potential - Drive performance</h2>
           <p>
             Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
             egestas eget quam. Vestibulum id ligula porta felis euismod semper.
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh, ut fermentum massa.
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
         </div>
       </div>
 
@@ -397,5 +385,64 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // const splitTypes = document.querySelectorAll(".reveal-type");
+
+      // splitTypes.forEach((char, i) => {
+      //   const text = new SplitType(char, { types: "chars" });
+      //   gsap.from(text.chars, {
+      //     scrollTrigger: {
+      //       trigger: char,
+      //       start: "top 80%",
+      //       end: "top 20%",
+      //       scrub: true,
+      //       markers: false,
+      //     },
+      //     y: 100,
+      //     opacity: 0,
+      //     stagger: 0.1,
+      //     duration: 1
+      //   });
+      // });
+
+      // gsap.fromTo(
+      //   ".hero-text-anim",
+      //   { opacity: 0 },
+      //   { opacity: 1, duration: 1.8 }
+      // );
+
+      // Split the text into individual words
+      const words = document.querySelectorAll(".hero-text-anim span");
+
+      // Create a GSAP timeline
+      const tl = gsap.timeline({ defaults: { opacity: 0 } });
+
+      // Iterate over each word and add animation to fade in
+      words.forEach((word, index) => {
+        const delay = index === 0 ? 0.5 : index * 0.2; // Half-second delay for the first word
+
+        tl.fromTo(
+          word,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.5, delay: index * 0.1 } // Adjust delay for staggered animation
+        );
+      });
+      // const lenis = new Lenis();
+      // lenis.on("scroll", (e) => {
+      //   console.log(e);
+      // });
+      // function raf(time) {
+      //   lenis.raf(time);
+      //   requestAnimationFrame(raf);
+      // }
+      // requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
