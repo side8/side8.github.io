@@ -71,6 +71,25 @@ body {
   line-height: normal;
 }
 
+@media (max-width: 576px) {
+  .hero-text span {
+      font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
+  }
+}
+
+.mask {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.masked-image {
+  width: 10em;
+  transform: translateY(-30px);
+  clip-path: circle(100px at 50% 50%);
+}
+
 .btn-primary {
   background-color: #f6511d;
   border-color: #f6511d;
@@ -223,4 +242,8 @@ body {
 
 .lead {
   margin-bottom: 0 ;
+}
+
+.image-style {
+  border-radius: 15px;
 }

@@ -116,16 +116,34 @@
     </section>
 
     <section class="container text-center">
-      <h1 class="text-body-emphasis ">Your partner in performance.</h1>
-      <p class="lead lead-animate ">Whether you are aiming to streamline operations,</p>
+      <h1 class="text-body-emphasis">Your partner in performance.</h1>
+      <p class="lead lead-animate">
+        Whether you are aiming to streamline operations,
+      </p>
       <p class="lead lead-animate">innovate your processes,</p>
       <p class="lead lead-animate">or stay ahead of the competition,</p>
-      <p class="lead lead-animate">we are here to make it happen.</h2>
+      <p class="lead lead-animate">we are here to make it happen.</p>
 
-      <!-- <p class="col-lg-8 mx-auto lead reveal-type">
+      <div class="mask">
+        <svg width="0" height="0">
+          <defs>
+            <mask id="mask" x="0" y="0" width="100%" height="100%">
+              <!-- Define the initial mask shape -->
+              <rect x="0" y="0" width="100%" height="100%" fill="white" />
+              <circle cx="100" cy="100" r="100" fill="black" />
+            </mask>
+          </defs>
+        </svg>
+        <img
+          src="images/brush-stroke-banner-6.svg"
+          class="masked-image"
+        />
+      </div>
+    </section>
+
+    <!-- <p class="col-lg-8 mx-auto lead reveal-type">
         Collaborate to propel your organisation toward its full potential.
       </p> -->
-    </section>
 
     <div class="container my-5">
       <div class="row my-5">
@@ -133,11 +151,17 @@
           <div
             class="image-container d-flex justify-content-center align-items-center anim-box"
           >
-            <img src="images/pexels-flo-dahm-699459.jpg" alt="Image 2" />
+            <img
+              class="image-style"
+              src="images/pexels-flo-dahm-699459.jpg"
+              alt="Image 2"
+            />
           </div>
           <h2 class="my-4 text-body-emphasis text-center">
             Amplifying outcomes
           </h2>
+          <br />
+          <br />
           <p class="reveal-type">
             Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
             tellus ac cursus commodo, tortor mauris condimentum nibh, ut
@@ -149,7 +173,11 @@
           <div
             class="image-container d-flex justify-content-center align-items-center anim-box"
           >
-            <img src="images/pexels-fauxels-3183197.jpg" alt="Image 2" />
+            <img
+              class="image-style"
+              src="images/pexels-fauxels-3183197.jpg"
+              alt="Image 2"
+            />
           </div>
           <h2 class="my-4 text-body-emphasis text-center">
             From Vision to Execution : Crafting Scalable Solutions
@@ -165,7 +193,11 @@
           <div
             class="image-container d-flex justify-content-center align-items-center anim-box"
           >
-            <img src="images/pexels-luis-gomes-546819.jpg" alt="Image 2" />
+            <img
+              class="image-style"
+              src="images/pexels-luis-gomes-546819.jpg"
+              alt="Image 2"
+            />
           </div>
           <h2 class="my-4 text-body-emphasis text-center">
             Unleash potential - Drive performance
@@ -179,21 +211,31 @@
         </div>
       </div>
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-ride="carousel"
+      >
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-color: #D5DFE5">
-            <p class="lead">FIRST SLIDE</p>
+          <div
+            class="carousel-item active"
+            style="background-color: var(--secondary-color)"
+          >
+            <p class="text-body-emphasis" style="font-size: 1rem">
+              FIRST SLIDE
+            </p>
             <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
           </div>
-          <div class="carousel-item" style="background-color: #F6511D">
+          <div
+            class="carousel-item"
+            style="background-color: var(--primary-color)"
+          >
             <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
             <p>SECOND SLIDE</p>
-
           </div>
-          <div class="carousel-item" style="background-color: #A6A867">
+          <div class="carousel-item" style="background-color: #a6a867">
             <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
             <p>LASY SLIDE</p>
-
           </div>
         </div>
       </div>
@@ -352,34 +394,48 @@
         );
       });
 
+      function animateleadText() {
+        // Get all elements with the class "animate"
+        const elements = document.querySelectorAll(".lead-animate");
 
+        elements.forEach((element, index) => {
+          const delay = index * 0.2; // Adjust the delay as needed
 
-          // Function to animate elements when they come into view
-    function animateleadText() {
-      // Get all elements with the class "animate"
-      const elements = document.querySelectorAll('.lead-animate');
-
-      elements.forEach((element, index) => {
-        const delay = index * 0.2; // Adjust the delay as needed
-
-          // Animate the element using GSAP
           gsap.from(element, {
             opacity: 0,
             y: 5,
             duration: 1,
-            delay:1 + delay,
-            ease: "power2.out"
+            delay: 1 + delay,
+            ease: "power2.out",
           });
+          // Animate the mask to reveal the content
+
           // Remove the "animate" class to prevent re-animating
-          element.classList.remove('lead-animate');
-        }
+          element.classList.remove("lead-animate");
+        });
+      }
+
+      // Call the function initially to animate elements in view on page load
+      animateleadText();
+
+      gsap.fromTo(
+        "#mask rect", // Target the masked rectangle
+        { x: "-100%" }, // Initial position (off-screen to the left)
+        { x: "0%", duration: 0.6, ease: "power2.out" } // Final position (fully revealed)
       );
-    }
 
-    
+      // gsap.utils.toArray('[data-scroll]').forEach(elem => {
+      //         gsap.to(elem, {
+      //             scrollTrigger: {
+      //                 trigger: elem,
+      //                 start: "top bottom", // Change this as needed
+      //                 end: "bottom top", // Change this as needed
+      //                 scrub: true
+      //             },
+      //             y: "-=65"
+      //         });
+      //     });
 
-    // Call the function initially to animate elements in view on page load
-    animateleadText();
       // const lenis = new Lenis();
       // lenis.on("scroll", (e) => {
       //   console.log(e);
@@ -390,8 +446,7 @@
       // }
       // requestAnimationFrame(raf);
 
-      $('.carousel').carousel()
-
+      $(".carousel").carousel();
     </script>
   </body>
 </html>
