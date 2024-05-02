@@ -3,6 +3,7 @@
   --secondary-color: #6c757d;
   --tertiary-color: #d5dfe5;
   --accent-color: #ffc107;
+  --white-color: #fff;
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
@@ -25,6 +26,20 @@ body {
 
 .nav-link {
   color: white;
+}
+
+.who-we-are-heading {
+  letter-spacing: -0.05rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800 !important;
+  color: white
+}
+
+@media (min-width: 40em) {
+
+  .who-we-are-heading {
+    font-size: 50px;
+  }
 }
 
 .navbar-brand {
@@ -64,18 +79,52 @@ body {
   height: auto;
 }
 
-
-
 .hero-text {
   font-size: calc(2rem + 1.5vw);
   font-family: "Archivo", sans-serif;
-    font-weight: 800;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.banner-text {
+  font-size: calc(3rem + 1.5vw);
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  line-height: normal;
+}
+
+@media (max-width: 576px) {
+  .hero-text span {
+    font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
+  }
+}
+
+.mask {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.masked-image {
+  width: 10em;
+  transform: translateY(-30px);
+  clip-path: circle(100px at 50% 50%);
+}
+
+.carousel-text {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: "white";
 }
 
 .btn-primary {
   background-color: #f6511d;
   border-color: #f6511d;
   --bs-btn-hover-bg: var(--tertiary-color);
+  --bs-btn-hover-border-color: none;
+  --bs-btn-active-bg: --var(--secondary-color)
 }
 
 .btn-secondary {
@@ -83,18 +132,17 @@ body {
   --bs-btn-border-color: #00a6fb;
 }
 
-.image-container {
-  width: 300px; /* Fixed width */
-  height: 300px; /* Fixed height */
-  overflow: hidden;
-  position: relative; /* Needed for absolutely positioned content */
-}
-
 .image-container img {
-  width: 100%; /* Ensures the image fills the container horizontally */
-  height: 100%; /* Ensures the image fills the container vertically */
+  width: 300px; /* Ensures the image does not exceed the width of its container */
+  height: 300px; /* Allows the image to scale proportionally */
+  padding: 10px; /* Adds padding around the image */
   object-fit: cover; /* Scales the image while preserving its aspect ratio */
   object-position: center; /* Centers the image within the container */
+}
+
+.text-body-emphasis {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
 }
 
 .bd-placeholder-img {
@@ -221,4 +269,12 @@ body {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.lead {
+  margin-bottom: 0;
+}
+
+.image-style {
+  border-radius: 15px;
 }

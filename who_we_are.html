@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -33,6 +33,11 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/87ad5d7072.js"
       crossorigin="anonymous"
@@ -59,7 +64,8 @@
         background-color: rgba(0, 0, 0, 0.1);
         border: solid rgba(0, 0, 0, 0.15);
         border-width: 1px 0;
-        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+        box-shadow:
+          inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
           inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
       }
 
@@ -137,7 +143,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">What we do</a>
+            <a class="nav-link" href="what_we_do.html">What we do</a>
           </li>
 
           <!-- <li class="nav-item">
@@ -150,21 +156,15 @@
     </nav>
 
     <div class="row">
-      <div class="col-md-6 px-5">
-        <h2
-          class="featurette-heading fw-normal lh-1 first-heading primary-color"
-        >
-          Elevate your vision<br />
-          with us.
-          <!-- <span class="text-body-secondary">It’ll blow your mind.</span> -->
-        </h2>
-        <p class="lead first-heading">
-          We stand as your strategic partner, offering consulting, engineering,
-          and innovation capabilities for businesses seeking long-term technical
-          excellence.
-        </p>
+      <div
+        class="col-md-6 px-5 d-flex justify-content-center align-items-center"
+        style="background-color: #f6511d"
+      >
+        <h1 class="who-we-are-heading">
+          Here to help you understand <br />how technology can ENABLE progress.
+        </h1>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" style="padding-left: 0">
         <img
           src="images/scott-graham-5fNmWej4tAA-unsplash.jpg"
           class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid w-100 grayscale"
@@ -176,7 +176,6 @@
     </div>
 
     <div class="container marketing" style="padding-top: 5rem">
-
       <div class="row">
         <div class="col-lg-4">
           <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
@@ -195,7 +194,9 @@
             <a
               class="btn btn-secondary"
               href="https://www.linkedin.com/in/jp-hamilton-savory/"
-              >View details &raquo;</a
+              >  <i class="bi bi-linkedin"></i>
+
+              Linkedin &raquo;</a
             >
           </p>
         </div>
@@ -211,12 +212,17 @@
           <h2 class="fw-normal my-2 hover-underline-animation">
             Duncan Crawford
           </h2>
-          <p>A people focused technologist. etc... etc... can we make sure the bios are the same character length please?!</p>
+          <p>
+            A people focused technologist adept at envisioning and architecting
+            secure systems.
+          </p>
           <p>
             <a
               class="btn btn-secondary"
               href="https://www.linkedin.com/in/duncancrawford/"
-              >View details &raquo;</a
+              >  <i class="bi bi-linkedin"></i>
+
+              Linkedin &raquo;</a
             >
           </p>
         </div>
@@ -232,16 +238,20 @@
           <h2 class="fw-normal my-2 hover-underline-animation">
             Tom van Neerijnen
           </h2>
-          <p>Some bio text about Tom</p>
+          <p>
+            A technology professional specializing in application platforms and
+            infrastructure.
+          </p>
 
-          <!-- <i class="fa-brands fa-linkedin"></i> -->
 
           <p>
             <a
               class="btn btn-secondary"
               href="https://www.linkedin.com/in/tommyvn/"
             >
-              View details &raquo;</a
+              <i class="bi bi-linkedin"></i>
+
+              Linkedin &raquo;</a
             >
           </p>
         </div>
@@ -254,20 +264,20 @@
       <hr class="featurette-divider" />
 
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div
+          class="col-md-7 order-md-2 d-flex justify-content-center align-items-center"
+        >
           <h2 class="featurette-heading fw-normal lh-1">
-            We've provided innovative solutions and expert guidance for
-            governmental agencies and startups
-            <span class="text-body-secondary">See for yourself.</span>
+            Side8 is your trusted partner in navigating the intersection of
+            technology and business.We pride ourselves on delivering successful
+            outcomes across diverse sectors,  <span style="color: #00a6fb "> both in the public and private
+            spheres.</span>
           </h2>
-          <p class="lead">
-            Another featurette? Of course. More placeholder content here to give
-            you an idea of how this layout would work with some actual
-            real-world content in place.
-          </p>
         </div>
-        <div class="col-md-5 order-md-1">
-          <svg
+        <div
+          class="col-md-5 order-md-1 d-flex justify-content-center align-items-start"
+        >
+          <!-- <svg
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
             width="500"
             height="500"
@@ -282,7 +292,21 @@
             <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
               500x500
             </text>
-          </svg>
+          </svg> -->
+          <img
+            src="./images/christopher-burns-Kj2SaNHG-hg-unsplash.jpg"
+            style="
+              max-width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            "
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto grayscale"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          />
         </div>
       </div>
 
@@ -291,33 +315,36 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">
-            And lastly, this one.
-            <span class="text-body-secondary">Checkmate.</span>
+            Whether it's working with start-ups to fuel their growth,
+            collaborating with established enterprises to optimise their
+            operations, or supporting large-scale government programs in
+            achieving their objectives:
+            <span style="color:  #f6511d""
+              >we've been there, done that, and excelled</span
+            >
           </h2>
-          <p class="lead">
+          <!-- <p class="lead">
             And yes, this is the last block of representative placeholder
             content. Again, not really intended to be actually read, simply here
             to give you a better view of what this would look like with some
             actual content. Your content.
-          </p>
+          </p> -->
         </div>
         <div class="col-md-5">
-          <svg
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            width="500"
-            height="500"
-            xmlns="http://www.w3.org/2000/svg"
+          <img
+            src="./images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg"
+            style="
+              max-width: 100%;
+              height: auto;
+              object-fit: cover;
+              object-position: center;
+            "
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto grayscale"
             role="img"
             aria-label="Placeholder: 500x500"
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
-          >
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
-            <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-              500x500
-            </text>
-          </svg>
+          />
         </div>
       </div>
 

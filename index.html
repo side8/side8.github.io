@@ -8,6 +8,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta
+      name="description"
+      content="Whether you are aiming to streamline operations, innovate your processes, or stay ahead of the competition, we are here to make it happen."
+    />
 
     <!-- Bootstrap CSS -->
 
@@ -27,6 +31,12 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/carousel.css" />
+
     <link rel="stylesheet" href="css/style.css" />
 
     <title>side8</title>
@@ -51,7 +61,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">What we do</a>
+              <a class="nav-link active" href="what_we_do.html">What we do</a>
             </li>
 
             <!-- <li class="nav-item">
@@ -65,16 +75,17 @@
     </header>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron hero jumbotron-container">
-      <div class="container hero-container">
-        <h1 class="hero-text">
-          side8<br />
-          WHERE<br />
-          INNOVATION<br />
-          MEETS<br />
-          IMPLEMENTATION
-        </h1>
-        <!-- <p class="hero-text">
+    <section>
+      <div class="jumbotron hero jumbotron-container">
+        <div class="container hero-container">
+          <h1 class="hero-text">SIDE8</h1>
+          <p class="hero-text-anim hero-text">
+            <span>WHERE</span><br />
+            <span>INNOVATION</span><br />
+            <span>MEETS</span><br />
+            <span>IMPLEMENTATION</span>
+          </p>
+          <!-- <p class="hero-text">
           We build production ready, scalable and resilient proof of concepts
           using AWS serverless technologies in 6 weeks.
         </p>
@@ -83,216 +94,129 @@
           businesses looking for technical expertise under longer term
           engagements.
         </p> -->
-        <p>
-        
-
-          <a class="btn btn-primary btn-lg" href="mailto:hello@side8.io" target="_blank" class="text-muted ml-2 mr-2">Get in touch &raquo;</a>
-
-        </p>
+          <p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="mailto:hello@side8.io"
+              target="_blank"
+              class="text-muted ml-2 mr-2"
+              >Get in touch &raquo;</a
+            >
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="px-5 text-center">
-      <div class="container ">
-        <img src="images/side8-white.svg" alt="Side8 Logo" />
-        <!-- <h1 class="text-body-emphasis">Brand Section</h1> -->
-        <p class="col-lg-8 mx-auto lead">
-          This section could have values and vision. How we approach our work
-          through collaboration and value added
-        </p>
+    <section>
+      <div class="px-5 text-center">
+        <div class="logo container">
+          <img src="images/side8-white.svg" alt="Side8 Logo" />
+        </div>
       </div>
-    </div>
+    </section>
 
+    <section class="container text-center">
+      <h1 class="text-body-emphasis">Your partner in performance.</h1>
+      <p class="lead lead-animate">
+        Whether you are aiming to streamline operations,
+      </p>
+      <p class="lead lead-animate">innovate your processes,</p>
+      <p class="lead lead-animate">or stay ahead of the competition,</p>
+      <p class="lead lead-animate">we are here to make it happen.</p>
 
-   
+      <div class="d-flex justify-content-center align-items-center my-3">
+        <div class="mask">
+          <svg width="0" height="0">
+            <defs>
+              <mask id="mask" x="0" y="0" width="100%" height="100%">
+                <!-- Define the initial mask shape -->
+                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                <circle cx="100" cy="100" r="100" fill="black" />
+              </mask>
+            </defs>
+          </svg>
+        </div>
+        <div style="width: 300px; height: 50px">
+          <img src="images/brush-stroke-banner-6.svg" class="masked-image" />
+        </div>
+      </div>
+    </section>
 
+    <!-- <p class="col-lg-8 mx-auto lead reveal-type">
+        Collaborate to propel your organisation toward its full potential.
+      </p> -->
 
     <div class="container my-5">
-      <!-- Example row of columns -->
       <div class="row my-5">
         <div class="col-md-4">
-          <div class="image-container">
-            <img src="images/pexels-flo-dahm-699459.jpg" alt="Image 2" />
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-flo-dahm-699459.jpg"
+              alt="Image 2"
+            />
           </div>
-          <h2 class="my-4">Heading</h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
+          <p class="h2 my-4 text-body-emphasis text-center">
+            Amplifying <br>outcomes
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
+      <br>
+          <p class="reveal-type">
+            Whether it's streamlining processes, enhancing customer experiences, or driving revenue growth, amplifying outcomes lies at the heart of all our work.
+          </p>
         </div>
         <div class="col-md-4">
-          <div class="image-container">
-            <img src="images/pexels-fauxels-3183197.jpg" alt="Image 2" />
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-fauxels-3183197.jpg"
+              alt="Image 2"
+            />
           </div>
-          <h2 class="my-4">Heading</h2>
-          <p>
-            Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-            tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-            fermentum massa justo sit amet risus. Etiam porta sem malesuada
-            magna mollis euismod. Donec sed odio dui.
+          <p class="h3 my-4 text-body-emphasis text-center">
+            From Vision to Execution : Crafting Scalable Solutions
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
+          <p>
+            We navigate ever evolving digital landscape, harnessing its power to drive transformative change and redefine what is possible for your business.
+          </p>
         </div>
         <div class="col-md-4">
-          <div class="image-container">
-            <img src="images/pexels-luis-gomes-546819.jpg" alt="Image 2" />
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-luis-gomes-546819.jpg"
+              alt="Image 2"
+            />
           </div>
-          <h2 class="my-4">Heading</h2>
-          <p>
-            Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Vestibulum id ligula porta felis euismod semper.
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-            nibh, ut fermentum massa.
+          <p class="h2 my-4 text-body-emphasis text-center">
+            Unleash potential - Drive performance
           </p>
-          <!-- <p>
-            <a class="btn btn-default" href="#" role="button"
-              >View details &raquo;</a
-            >
-          </p> -->
+          <br>
+          <p>
+            By leveraging cutting-edge technologies and strategic insights we optimise operations to catalyse growth and untapped possibilities.
+          </p>
         </div>
       </div>
 
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+
+      <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-                </p>
-              </div>
+            <div class="carousel-item active" style="background-color: var(--secondary-color)">
+                <p class="h1 text-body-emphasis" style="font-size: 3rem; text-align: center; ">INNOVATE</p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide
-                  of the carousel.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
+            <div class="carousel-item d-flex align-items-center justify-content-center" style="background-color: var(--primary-color)">
+                <p class="h1" style="font-size: 3rem; text-align: center; margin-top: 40vh;">SCALE</p>
             </div>
-          </div>
-          <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              />
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-                <p>
-                  <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
-                </p>
-              </div>
+            <div class="carousel-item" style="background-color: #a6a867">
+                <p class="text-body-emphasis" style="font-size: 3rem; text-align: center; margin-top: 40vh;">DELIVER</p>
             </div>
-          </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
+    </div> -->
       <hr />
 
       <footer>
@@ -397,5 +321,109 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // const splitTypes = document.querySelectorAll(".reveal-type");
+
+      // splitTypes.forEach((char, i) => {
+      //   const text = new SplitType(char, { types: "chars" });
+      //   gsap.from(text.chars, {
+      //     scrollTrigger: {
+      //       trigger: char,
+      //       start: "top 80%",
+      //       end: "top 20%",
+      //       scrub: true,
+      //       markers: false,
+      //     },
+      //     y: 100,
+      //     opacity: 0,
+      //     stagger: 0.1,
+      //     duration: 1
+      //   });
+      // });
+
+      // gsap.fromTo(
+      //   ".hero-text-anim",
+      //   { opacity: 0 },
+      //   { opacity: 1, duration: 1.8 }
+      // );
+
+      // Split the text into individual words
+      const words = document.querySelectorAll(".hero-text-anim span");
+
+      // Create a GSAP timeline
+      const tl = gsap.timeline({ defaults: { opacity: 0 } });
+
+      // Iterate over each word and add animation to fade in
+      words.forEach((word, index) => {
+        const delay = index === 0 ? 0.5 : index * 0.2; // Half-second delay for the first word
+
+        tl.fromTo(
+          word,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.5, delay: index * 0.1 } // Adjust delay for staggered animation
+        );
+      });
+
+      function animateleadText() {
+        // Get all elements with the class "animate"
+        const elements = document.querySelectorAll(".lead-animate");
+
+        elements.forEach((element, index) => {
+          const delay = index * 0.2; // Adjust the delay as needed
+
+          gsap.from(element, {
+            opacity: 0,
+            y: 5,
+            duration: 1,
+            delay: 1 + delay,
+            ease: "power2.out",
+          });
+          // Animate the mask to reveal the content
+
+          // Remove the "animate" class to prevent re-animating
+          element.classList.remove("lead-animate");
+        });
+      }
+
+      // Call the function initially to animate elements in view on page load
+      animateleadText();
+
+      gsap.fromTo(
+        "#mask rect", // Target the masked rectangle
+        { x: "-100%" }, // Initial position (off-screen to the left)
+        { x: "0%", duration: 0.6, ease: "power2.out" } // Final position (fully revealed)
+      );
+
+      // gsap.utils.toArray('[data-scroll]').forEach(elem => {
+      //         gsap.to(elem, {
+      //             scrollTrigger: {
+      //                 trigger: elem,
+      //                 start: "top bottom", // Change this as needed
+      //                 end: "bottom top", // Change this as needed
+      //                 scrub: true
+      //             },
+      //             y: "-=65"
+      //         });
+      //     });
+
+      // const lenis = new Lenis();
+      // lenis.on("scroll", (e) => {
+      //   console.log(e);
+      // });
+      // function raf(time) {
+      //   lenis.raf(time);
+      //   requestAnimationFrame(raf);
+      // }
+      // requestAnimationFrame(raf);
+
+      $(".carousel").carousel();
+    </script>
   </body>
 </html>
