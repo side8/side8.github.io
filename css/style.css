@@ -123,6 +123,8 @@ body {
   background-color: #f6511d;
   border-color: #f6511d;
   --bs-btn-hover-bg: var(--tertiary-color);
+  --bs-btn-hover-border-color: none;
+  --bs-btn-active-bg: --var(--secondary-color)
 }
 
 .btn-secondary {
