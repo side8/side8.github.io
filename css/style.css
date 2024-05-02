@@ -3,6 +3,7 @@
   --secondary-color: #6c757d;
   --tertiary-color: #d5dfe5;
   --accent-color: #ffc107;
+  --white-color: #fff;
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
@@ -25,6 +26,20 @@ body {
 
 .nav-link {
   color: white;
+}
+
+.who-we-are-heading {
+  letter-spacing: -0.05rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800 !important;
+  color: white
+}
+
+@media (min-width: 40em) {
+
+  .who-we-are-heading {
+    font-size: 50px;
+  }
 }
 
 .navbar-brand {
@@ -73,7 +88,7 @@ body {
 
 @media (max-width: 576px) {
   .hero-text span {
-      font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
+    font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
   }
 }
 
@@ -88,6 +103,13 @@ body {
   width: 10em;
   transform: translateY(-30px);
   clip-path: circle(100px at 50% 50%);
+}
+
+.carousel-text {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: "white";
 }
 
 .btn-primary {
@@ -241,7 +263,7 @@ body {
 }
 
 .lead {
-  margin-bottom: 0 ;
+  margin-bottom: 0;
 }
 
 .image-style {
