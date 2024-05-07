@@ -16,6 +16,10 @@ body {
   color: var(--primary-color);
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 .tertiary-color {
   color: var(--tertiary-color);
 }
@@ -23,6 +27,8 @@ body {
 .bg-dark {
   background-color: #2c363f !important;
 }
+
+
 
 .nav-link {
   color: white;
