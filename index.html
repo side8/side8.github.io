@@ -165,10 +165,22 @@
           and innovation capabilities for businesses seeking long term technical
           excellence.
         </p>
-        <button type="button" class="btn btn-outline-light">Collaborate with us to propel your organisation to it's full potential</button>
-
+        <button id="emailButton" type="button" class="btn btn-outline-light">
+          Collaborate with us to propel your organisation to it's full potential
+        </button>
       </div>
+    </div>
 
+    <hr class="featurette-divider" />
+
+    <div class="container-fluid p-5 col-md-6">
+      <p class="lead text-center">
+        With a combined experience of over sixty years, our leadership team has
+        navigated every corner of the digital landscape. From private to public
+        sectors, start-ups to enterprise giants, and government initiatives -
+        nothing is out of bounds.
+      </p>
+      <p class="text-center py-5"><a href="who_we_are.html" class="rounded-link">Who are side8 ?</a></p>
     </div>
 
     <div class="container">
@@ -264,6 +276,12 @@
 
       // Call the function initially to animate elements in view on page load
       animateleadText();
+
+      document
+        .getElementById("emailButton")
+        .addEventListener("click", function () {
+          window.location.href = "mailto:hello@side8.io";
+        });
 
       // gsap.utils.toArray('[data-scroll]').forEach(elem => {
       //         gsap.to(elem, {

@@ -303,3 +303,17 @@ body {
 .orange-container {
   min-height: calc(25vh + 100px);
 }
+
+.rounded-link {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.rounded-link:hover {
+  background-color: #000;
+  color: #fff;
+}
