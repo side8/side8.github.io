@@ -16,13 +16,29 @@ body {
   color: var(--primary-color);
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+}
+
 .tertiary-color {
   color: var(--tertiary-color);
+}
+
+.white-color {
+  color: var(--white-color);
+
 }
 
 .bg-dark {
   background-color: #2c363f !important;
 }
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+
+}
+
+
 
 .nav-link {
   color: white;
@@ -144,6 +160,10 @@ body {
 .text-body-emphasis {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
+}
+
+.h2-bold {
+  font-weight: 900
 }
 
 .bd-placeholder-img {
@@ -278,4 +298,22 @@ body {
 
 .image-style {
   border-radius: 15px;
+}
+
+.orange-container {
+  min-height: calc(25vh + 100px);
+}
+
+.rounded-link {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.rounded-link:hover {
+  background-color: #000;
+  color: #fff;
 }
