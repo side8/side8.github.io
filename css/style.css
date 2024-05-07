@@ -24,8 +24,18 @@ body {
   color: var(--tertiary-color);
 }
 
+.white-color {
+  color: var(--white-color);
+
+}
+
 .bg-dark {
   background-color: #2c363f !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+
 }
 
 
@@ -288,4 +298,8 @@ body {
 
 .image-style {
   border-radius: 15px;
+}
+
+.orange-container {
+  min-height: calc(25vh + 100px);
 }
