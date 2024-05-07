@@ -146,6 +146,10 @@ body {
   font-weight: 700;
 }
 
+.h2-bold {
+  font-weight: 900
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
