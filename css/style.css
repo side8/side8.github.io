@@ -112,7 +112,7 @@ body {
 
 @media (max-width: 576px) {
   .hero-text span {
-    font-size: calc(1rem + 2vw); /* Adjust font size for smaller screens */
+    font-size: calc(1rem + 2vw); /* this is adjusted to this height so the word implementation is accomodated */
   }
 }
 
