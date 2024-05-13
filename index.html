@@ -66,12 +66,6 @@
             <li class="nav-item">
               <a class="nav-link" href="what_we_do.html">What we do</a>
             </li>
-
-            <!-- <li class="nav-item">
-              <button type="button" class="btn btn-default navbar-btn">
-                Get in touch
-              </button>
-            </li> -->
           </ul>
         </div>
       </nav>
@@ -288,29 +282,17 @@
           window.location.href = "mailto:hello@side8.io";
         });
 
-      // gsap.utils.toArray('[data-scroll]').forEach(elem => {
-      //         gsap.to(elem, {
-      //             scrollTrigger: {
-      //                 trigger: elem,
-      //                 start: "top bottom", // Change this as needed
-      //                 end: "bottom top", // Change this as needed
-      //                 scrub: true
-      //             },
-      //             y: "-=65"
-      //         });
-      //     });
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        const triggerPosition =
+          document.querySelector(".anim-box").offsetTop - window.innerHeight;
 
-      // const lenis = new Lenis();
-      // lenis.on("scroll", (e) => {
-      //   console.log(e);
-      // });
-      // function raf(time) {
-      //   lenis.raf(time);
-      //   requestAnimationFrame(raf);
-      // }
-      // requestAnimationFrame(raf);
-
-      $(".carousel").carousel();
+        if (scrollPosition > triggerPosition) {
+          document.querySelectorAll(".anim-box").forEach((box) => {
+            box.classList.add("fadeInUp");
+          });
+        }
+      });
     </script>
   </body>
 </html>
