@@ -26,7 +26,6 @@ body {
 
 .white-color {
   color: var(--white-color);
-
 }
 
 .bg-dark {
@@ -35,21 +34,16 @@ body {
 
 .bg-primary {
   background-color: var(--primary-color) !important;
-
 }
-
-
 
 .who-we-are-heading {
   letter-spacing: -0.05rem;
   font-family: "Archivo", sans-serif;
   font-weight: 800 !important;
-  color: white
+  color: white;
 }
 
-
 @media (min-width: 40em) {
-
   .who-we-are-heading {
     font-size: 50px;
   }
@@ -58,7 +52,6 @@ body {
 .navbar-brand {
   color: white;
   margin-left: 20px;
-
   --bs-navbar-brand-hover-color: var(--primary-color);
 }
 
@@ -68,8 +61,7 @@ body {
 }
 
 .active {
-  color: var(--accent-color)
-
+  color: var(--accent-color);
 }
 
 .jumbotron-container {
@@ -90,13 +82,6 @@ body {
   color: white;
 }
 
-.custom-image {
-  max-width: 500px;
-  max-height: 500px;
-  width: auto;
-  height: auto;
-}
-
 .hero-text {
   font-size: calc(2rem + 1.5vw);
   font-family: "Archivo", sans-serif;
@@ -113,36 +98,19 @@ body {
 
 @media (max-width: 576px) {
   .hero-text span {
-    font-size: calc(1rem + 2vw); /* this is adjusted to this height so the word implementation is accomodated */
+    font-size: calc(
+      1rem + 2vw
+    ); /* this is adjusted to this height so the word implementation is accomodated */
   }
 }
 
-.mask {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-.masked-image {
-  width: 10em;
-  transform: translateY(-30px);
-  clip-path: circle(100px at 50% 50%);
-}
-
-.carousel-text {
-  margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: "white";
-}
 
 .btn-primary {
   background-color: #f6511d;
   border-color: #f6511d;
   --bs-btn-hover-bg: var(--tertiary-color);
   --bs-btn-hover-border-color: none;
-  --bs-btn-active-bg: --var(--secondary-color)
+  --bs-btn-active-bg: --var(--secondary-color);
 }
 
 .btn-secondary {
@@ -164,7 +132,7 @@ body {
 }
 
 .h2-bold {
-  font-weight: 900
+  font-weight: 900;
 }
 
 .bd-placeholder-img {
@@ -179,92 +147,6 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-}
-
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
-.bi {
-  vertical-align: -0.125em;
-  fill: currentColor;
-}
-
-.nav-scroller {
-  position: relative;
-  z-index: 2;
-  height: 2.75rem;
-  overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-bottom: 1rem;
-  margin-top: -1px;
-  overflow-x: auto;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-
-.btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
-}
-
-.bd-mode-toggle {
-  z-index: 1500;
-}
-
-.bd-mode-toggle .dropdown-menu .active .bi {
-  display: block !important;
-}
-
-/* --bs-btn-hover-bg {
-      background-color: #36383f;
-    } */
-
-/* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
 }
 
 .grayscale {
@@ -318,4 +200,3 @@ body {
   background-color: #000;
   color: #fff;
 }
-
