@@ -52,11 +52,7 @@
               <a class="nav-link active" href="what_we_do.html">What we do</a>
             </li>
 
-            <!-- <li class="nav-item">
-              <button type="button" class="btn btn-default navbar-btn">
-                Get in touch
-              </button>
-            </li> -->
+       
           </ul>
         </div>
       </nav>
@@ -185,6 +181,23 @@ Beyond solutions, we create resonant offerings that reflect your ethos - deliver
       rowContainers.forEach(rowContainer => {
         observer.observe(rowContainer);
       });
+
+
+      // check navlink links are active 
+        // Get the current URL path
+  let path = window.location.pathname;
+
+// Get all nav links
+let navLinks = document.querySelectorAll('.nav-link');
+
+// Loop through each nav link
+navLinks.forEach(function(navLink) {
+  // Check if the nav link href matches the current path
+  if (navLink.getAttribute('href') === path) {
+    // Add the active class to the nav link
+    navLink.classList.add('active');
+  }
+});
     </script>
   </body>
 

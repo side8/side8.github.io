@@ -40,10 +40,6 @@ body {
 
 
 
-.nav-link {
-  color: white;
-}
-
 .who-we-are-heading {
   letter-spacing: -0.05rem;
   font-family: "Archivo", sans-serif;
@@ -67,8 +63,13 @@ body {
 }
 
 .nav {
-  --bs-nav-link-color: #a6a867;
+  --bs-nav-link-color: white;
   --bs-nav-link-hover-color: #a6a867;
+}
+
+.active {
+  color: var(--accent-color)
+
 }
 
 .jumbotron-container {
@@ -317,3 +318,4 @@ body {
   background-color: #000;
   color: #fff;
 }
+
