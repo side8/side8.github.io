@@ -1,67 +1,300 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Whether you are aiming to streamline operations, innovate your processes, or stay ahead of the competition, we are here to make it happen."
+    />
+    <meta name="keywords" content="side8, digital, innovation, engineering" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/carousel.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>side8</title>
   </head>
-  <body class="bg-dark text-light">
-    <div class="jumbotron d-flex align-items-center min-vh-100 bg-dark text-light">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>
-                  Development partners
-                </h2>
-                <p>
-                  We build production ready, scalable and resilient proof of concepts using AWS serverless technologies in 6 weeks.
-                </p>
-                <p>
-                  We also offer consulting, engineering and innovation capabilities to businesses looking for technical expertise under longer term engagements.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <h2>
-                    pipeline.side8
-                </h2>
-                <p>
-                    Turn your GitHub Pull Requests into a powerful CI/CD interface for your AWS CloudFormation infrastructure.
-                </p>
-            </div>
+  <!-- <body class="bg-dark text-light"> -->
+  <body>
+    <!-- <nav class="navbar fixed-top bg-body-tertiary"> -->
+    <header>
+      <nav class="navbar fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">side8</a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="who_we_are.html"
+                >Who we are</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="what_we_do.html">What we do</a>
+            </li>
+          </ul>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <p>
-                  <a href="mailto:hello@side8.io" target="_blank" class="btn btn-primary">Email Us</a>
-                </p>
-            </div>
-            <div class="col-md-6">
-                <a href="https://github.com/marketplace/side8-pipeline" target="_blank" class="btn btn-primary">Install</a>
-                <a href="https://docs.pipeline.side8.io" target="_blank" class="btn btn-primary">Documentation</a>
-            </div>
+      </nav>
+    </header>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section>
+      <div class="jumbotron hero jumbotron-container">
+        <div class="container">
+          <h1 class="hero-text hero-text-anim"><span>SIDE8</span></h1>
+          <p class="hero-text-anim hero-text">
+            <span>WHERE</span><br />
+            <span>INNOVATION</span><br />
+            <span>MEETS</span><br />
+            <span>IMPLEMENTATION</span>
+          </p>
+
+          <p>
+            <a
+              class="btn btn-primary btn-lg"
+              href="mailto:hello@side8.io"
+              target="_blank"
+              class="text-muted ml-2 mr-2"
+              >Get in touch &raquo;</a
+            >
+          </p>
         </div>
-        <div class="row border-top">
-          <div class="col-md-6">
-            <a href="privacy.html" target="_blank" class="text-muted ml-2 mr-2">privacy policy</a>
-            <a href="tc.html" target="_blank" class="text-muted ml-2 mr-2">terms and conditions</a>
-            <a href="mailto:hello@side8.io" target="_blank" class="text-muted ml-2 mr-2">contact us</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="px-5 d-flex justify-content-center">
+        <img src="images/side8-white.svg" alt="Side8 Logo" />
+      </div>
+    </section>
+
+    <section class="container text-center">
+      <h1 class="text-body-emphasis">Your partner in performance.</h1>
+      <p class="lead lead-animate">
+        We act as your digital advisor, providing a fine tuned
+      </p>
+      <p class="lead lead-animate">pathway from strategy to execution...</p>
+    </section>
+
+    <div class="container my-5">
+      <div class="row my-5">
+        <div class="col-md-4">
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-flo-dahm-699459.jpg"
+              alt="Image 2"
+            />
           </div>
-          <div class="col-md-6">
-	    <a href="https://beta.companieshouse.gov.uk/company/10676516" target="_blank" class="text-muted ml-2 mr-2">Disseminate Consulting Limited is a company registered in England and Wales with company number 10676516</a>
+          <p class="h2 my-4 text-body-emphasis text-center">ENGINEERING</p>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-fauxels-3183197.jpg"
+              alt="Image 2"
+            />
           </div>
+          <p class="h2 my-4 text-body-emphasis text-center">PRODUCT</p>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="image-container d-flex justify-content-center align-items-center anim-box"
+          >
+            <img
+              class="image-style"
+              src="images/pexels-luis-gomes-546819.jpg"
+              alt="Image 2"
+            />
+          </div>
+          <p class="h2 my-4 text-body-emphasis text-center">DELIVERY</p>
         </div>
       </div>
     </div>
+
+    <div class="container-fluid bg-primary d-flex p-5 orange-container row">
+      <div class="col-lg-5">
+        <p class="h2 white-color">From Vision to Execution :</p>
+        <p class="h2 white-color">Crafting Scalable Solutions</p>
+      </div>
+      <div class="col-lg-7 py-5 lead white-color flex-column">
+        <p>
+          We engage as your strategic partner, offering consulting, engineering,
+          and innovation capabilities for businesses seeking long term technical
+          excellence.
+        </p>
+        <button id="emailButton" type="button" class="btn btn-outline-light">
+          Collaborate with us to propel your organisation to it's full potential
+        </button>
+      </div>
+    </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="container-fluid p-5 col-md-6">
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          src="./images/noun-team-6795416.svg"
+          alt="Team Image"
+          style="width: 250px; height: 250px"
+        />
+      </div>
+      <p class="lead text-center">
+        With a combined experience of over sixty years, our leadership team has
+        navigated every corner of the digital landscape. From private to public
+        sectors, start-ups to enterprise giants, and government initiatives -
+        nothing is out of bounds.
+      </p>
+      <p class="text-center py-5">
+        <a href="who_we_are.html" class="rounded-link">Who are side8 ?</a>
+      </p>
+    </div>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-6 mb-0 text-body-secondary">&copy; 2024 side8</p>
+
+        <ul class="nav col-md-6 justify-content-end">
+          <li class="nav-item">
+            <a href="./privacy.html" class="nav-link px-2 text-body-secondary"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="./tc.html" class="nav-link px-2 text-body-secondary"
+              >Terms & Conditions</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="mailto:hello@side8.io"
+              class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Split the text into individual words
+      const words = document.querySelectorAll(".hero-text-anim span");
+
+      // Create a GSAP timeline
+      const tl = gsap.timeline({ defaults: { opacity: 0 } });
+
+      // Iterate over each word and add animation to fade in
+      words.forEach((word, index) => {
+        const delay = index === 0 ? 0.5 : index * 0.2; // Half-second delay for the first word
+
+        tl.fromTo(
+          word,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.5, delay: index * 0.1 } // Adjust delay for staggered animation
+        );
+      });
+
+      function animateleadText() {
+        // Get all elements with the class "animate"
+        const elements = document.querySelectorAll(".lead-animate");
+
+        elements.forEach((element, index) => {
+          const delay = index * 0.2; // Adjust the delay as needed
+
+          gsap.from(element, {
+            opacity: 0,
+            y: 5,
+            duration: 1,
+            delay: 1 + delay,
+            ease: "power2.out",
+          });
+
+          // Remove the "animate" class to prevent re-animating
+          element.classList.remove("lead-animate");
+        });
+      }
+
+      // Call the function initially to animate elements in view on page load
+      animateleadText();
+
+      document
+        .getElementById("emailButton")
+        .addEventListener("click", function () {
+          window.location.href = "mailto:hello@side8.io";
+        });
+
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        const triggerPosition =
+          document.querySelector(".anim-box").offsetTop - window.innerHeight;
+
+        if (scrollPosition > triggerPosition) {
+          document.querySelectorAll(".anim-box").forEach((box) => {
+            box.classList.add("fadeInUp");
+          });
+        }
+      });
+    </script>
   </body>
 </html>
