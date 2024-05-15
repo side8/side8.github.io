@@ -12,6 +12,7 @@
       name="description"
       content="Whether you are aiming to streamline operations, innovate your processes, or stay ahead of the competition, we are here to make it happen."
     />
+    <meta name="keywords" content="side8, digital, innovation, engineering" />
 
     <!-- Bootstrap CSS -->
 
@@ -50,25 +51,16 @@
           <a class="navbar-brand" href="index.html">side8</a>
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="who_we_are.html"
+              <a class="nav-link" aria-current="page" href="who_we_are.html"
                 >Who we are</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="what_we_do.html">What we do</a>
+              <a class="nav-link" href="what_we_do.html">What we do</a>
             </li>
-
-            <!-- <li class="nav-item">
-              <button type="button" class="btn btn-default navbar-btn">
-                Get in touch
-              </button>
-            </li> -->
           </ul>
         </div>
       </nav>
@@ -78,7 +70,7 @@
     <section>
       <div class="jumbotron hero jumbotron-container">
         <div class="container">
-          <h1 class="hero-text">SIDE8</h1>
+          <h1 class="hero-text hero-text-anim"><span>SIDE8</span></h1>
           <p class="hero-text-anim hero-text">
             <span>WHERE</span><br />
             <span>INNOVATION</span><br />
@@ -154,12 +146,12 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-primary d-flex p-5 orange-container">
-      <div class="col-md-5">
+    <div class="container-fluid bg-primary d-flex p-5 orange-container row">
+      <div class="col-lg-5">
         <p class="h2 white-color">From Vision to Execution :</p>
         <p class="h2 white-color">Crafting Scalable Solutions</p>
       </div>
-      <div class="col-md-7 py-5 lead white-color flex-column">
+      <div class="col-lg-7 py-5 lead white-color flex-column">
         <p>
           We engage as your strategic partner, offering consulting, engineering,
           and innovation capabilities for businesses seeking long term technical
@@ -174,13 +166,22 @@
     <hr class="featurette-divider" />
 
     <div class="container-fluid p-5 col-md-6">
+      <div class="d-flex justify-content-center align-items-center">
+        <img
+          src="./images/noun-team-6795416.svg"
+          alt="Team Image"
+          style="width: 250px; height: 250px"
+        />
+      </div>
       <p class="lead text-center">
         With a combined experience of over sixty years, our leadership team has
         navigated every corner of the digital landscape. From private to public
         sectors, start-ups to enterprise giants, and government initiatives -
         nothing is out of bounds.
       </p>
-      <p class="text-center py-5"><a href="who_we_are.html" class="rounded-link">Who are side8 ?</a></p>
+      <p class="text-center py-5">
+        <a href="who_we_are.html" class="rounded-link">Who are side8 ?</a>
+      </p>
     </div>
 
     <div class="container">
@@ -283,29 +284,17 @@
           window.location.href = "mailto:hello@side8.io";
         });
 
-      // gsap.utils.toArray('[data-scroll]').forEach(elem => {
-      //         gsap.to(elem, {
-      //             scrollTrigger: {
-      //                 trigger: elem,
-      //                 start: "top bottom", // Change this as needed
-      //                 end: "bottom top", // Change this as needed
-      //                 scrub: true
-      //             },
-      //             y: "-=65"
-      //         });
-      //     });
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        const triggerPosition =
+          document.querySelector(".anim-box").offsetTop - window.innerHeight;
 
-      // const lenis = new Lenis();
-      // lenis.on("scroll", (e) => {
-      //   console.log(e);
-      // });
-      // function raf(time) {
-      //   lenis.raf(time);
-      //   requestAnimationFrame(raf);
-      // }
-      // requestAnimationFrame(raf);
-
-      $(".carousel").carousel();
+        if (scrollPosition > triggerPosition) {
+          document.querySelectorAll(".anim-box").forEach((box) => {
+            box.classList.add("fadeInUp");
+          });
+        }
+      });
     </script>
   </body>
 </html>
